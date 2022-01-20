@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
 
 import com.android.build.OutputFile
 
@@ -78,7 +79,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    enableHermes: false,  // clean and rebuild if changing
+    enableHermes: true
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -125,6 +126,14 @@ def enableHermes = project.ext.react.get("enableHermes", false);
  */
 def nativeArchitectures = project.getProperties().get("reactNativeDebugArchitectures")
 
+react {
+    reactRoot = rootProject.file("../node_modules/react-native/")
+    jsRootDir = rootProject.file("../Libraries/")
+    codegenDir = rootProject.file("../node_modules/react-native-codegen/")
+    libraryName = "samplelibrary"
+    codegenJavaPackageName = "com.example.samplelibrary"
+}
+
 android {
     ndkVersion rootProject.ext.ndkVersion
 
@@ -136,6 +145,43 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        externalNativeBuild {
+            ndkBuild {
+                arguments "APP_PLATFORM=android-21",
+                        "APP_STL=c++_shared",
+                        "NDK_TOOLCHAIN_VERSION=clang",
+                        "GENERATED_SRC_DIR=$buildDir/generated/source",
+                        "PROJECT_BUILD_DIR=$buildDir",
+                        "REACT_ANDROID_DIR=$rootDir/../node_modules/react-native/ReactAndroid",
+                        "REACT_ANDROID_BUILD_DIR=$rootDir/../node_modules/react-native/ReactAndroid/build"
+                cFlags "-Wall", "-Werror", "-fexceptions", "-frtti", "-DWITH_INSPECTOR=1"
+                cppFlags "-std=c++17"
+                targets "samplelibrary"
+            }
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path "$projectDir/src/main/jni/Android.mk"
+        }
+    }
+    def reactAndroidProjectDir = project(':ReactAndroid').projectDir
+    def packageReactNdkLibs = tasks.register("packageReactNdkLibs", Copy) {
+        dependsOn(":ReactAndroid:packageReactNdkLibsForBuck")
+        dependsOn("generateCodegenArtifactsFromSchema")
+        from("$reactAndroidProjectDir/src/main/jni/prebuilt/lib")
+        into("$buildDir/react-ndk/exported")
+    }
+
+    afterEvaluate {
+        preBuild.dependsOn(packageReactNdkLibs)
+        configureNdkBuildDebug.dependsOn(preBuild)
+        configureNdkBuildRelease.dependsOn(preBuild)
+    }
+
+    packagingOptions {
+        pickFirst '**/libhermes.so'
+        pickFirst '**/libjsc.so'
     }
     splits {
         abi {
@@ -191,7 +237,7 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(":ReactAndroid")
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 

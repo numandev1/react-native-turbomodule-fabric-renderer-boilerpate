@@ -1,3 +1,4 @@
+install! 'cocoapods', :deterministic_uuids => false
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
@@ -8,8 +9,9 @@ target 'ReactNativeTurbomoduleFabricRendererBoilerpate' do
 
   use_react_native!(
     :path => config[:reactNativePath],
+    fabric_enabled: true,
     # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => false
+    :hermes_enabled => true
   )
 
   target 'ReactNativeTurbomoduleFabricRendererBoilerpateTests' do
@@ -26,5 +28,11 @@ target 'ReactNativeTurbomoduleFabricRendererBoilerpate' do
   post_install do |installer|
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    use_react_native_codegen_discovery!({
+           react_native_path: config[:reactNativePath],
+           # Modify here if your app root path isn't the same as this one.
+            app_path: "#{Dir.pwd}/..",
+            fabric_enabled: true
+     })
   end
 end

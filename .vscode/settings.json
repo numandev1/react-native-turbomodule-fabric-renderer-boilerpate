@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "Fastfile": "ruby",
+    "Matchfile": "ruby",
+    "memory": "cpp",
+    "complex": "cpp"
+  }
+}

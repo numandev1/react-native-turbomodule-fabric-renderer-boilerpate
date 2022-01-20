@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeTurbomoduleFabricRendererBoilerpate",
+  "name": "reactnative_turbomodule_fabricrenderer_boilerpate",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.66.4"
+    "react-native": "0.0.0-20220120-2008-2f67f5d68",
+    "react-native-codegen": "0.0.12",
+    "react-native-gradle-plugin": "^0.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -23,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "babel-jest": "^26.6.3",
+    "babel-plugin-codegen": "^4.1.5",
     "eslint": "^7.14.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
@@ -41,6 +44,20 @@
       "jsx",
       "json",
       "node"
+    ]
+  },
+  "codegenConfig": {
+    "libraries": [
+      {
+        "name": "MyApplicationLibrary",
+        "type": "modules",
+        "jsSrcsDir": "Libraries"
+      },
+      {
+        "name": "MyApplicationTurboCxxModule",
+        "type": "modules",
+        "jsSrcsDir": "Libraries"
+      }
     ]
   }
 }
