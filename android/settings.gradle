@@ -2,10 +2,6 @@ rootProject.name = 'ReactNativeTurbomoduleFabricRendererBoilerpate'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 
-includeBuild('../node_modules/react-native-gradle-plugin') {
-    dependencySubstitution {
-        substitute(module("com.facebook.react:react")).using(project(":"))
-    }
-}
+includeBuild('../node_modules/react-native-gradle-plugin')
 include(":ReactAndroid")
 project(":ReactAndroid").projectDir = file('../node_modules/react-native/ReactAndroid')

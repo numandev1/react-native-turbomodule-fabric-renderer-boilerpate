@@ -3,6 +3,8 @@
     "Fastfile": "ruby",
     "Matchfile": "ruby",
     "memory": "cpp",
-    "complex": "cpp"
+    "complex": "cpp",
+    "__locale": "cpp",
+    "*.ipp": "cpp"
   }
 }

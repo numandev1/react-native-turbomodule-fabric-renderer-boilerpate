@@ -1,6 +1,6 @@
 import React from 'react';
 import type {Node} from 'react';
-import {SafeAreaView, useColorScheme, StyleSheet} from 'react-native';
+import {SafeAreaView, useColorScheme, StyleSheet, Alert} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Button from 'react-native/Libraries/Components/Button';
@@ -14,9 +14,8 @@ const App: () => Node = () => {
   };
 
   const testHandler = async () => {
-    // console.log('invoke testHandler', MyApplicationLibrary);
-    // const response = await MyApplicationLibrary.getString('hello world ');
-    // console.log(response);
+    const response = await MyApplicationLibrary.getString('hello world ');
+    console.log(response);
     // // const response2 = await MyApplicationTurboCxxModule.getConstants();
     // // console.log(response)
   };
