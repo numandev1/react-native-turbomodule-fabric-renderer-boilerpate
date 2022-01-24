@@ -5570,10 +5570,10 @@ react-native-gradle-plugin@^0.0.4:
   dependencies:
     react-native-codegen "*"
 
-react-native@0.0.0-20220121-2009-d0f023465:
-  version "0.0.0-20220121-2009-d0f023465"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220121-2009-d0f023465.tgz#8f1f928ef516d55b25d043b5c17dc269362f0848"
-  integrity sha512-xT9Ci2WJIMqQIXC2U2EpRhRpz6c+itcEX6Jd5QVTg+PjZeEEcwIzFNYEjTDBe9vhamGD0BwEFNmn2YdKDe2jcA==
+react-native@0.0.0-20220123-2009-48f6967ae:
+  version "0.0.0-20220123-2009-48f6967ae"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220123-2009-48f6967ae.tgz#b58475f7ca2fdd453d8cf910cef5fe66a0f54cbf"
+  integrity sha512-hjz3uVL9Fen/LW0TOFV2EjSSg4WykvQvpa6E25t8P02MfXnBSVMc3sWdHjL4H1Ahz5+UR+zI61rqnZPOS1ilnA==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^6.0.0"

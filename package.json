@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.0.0-20220121-2009-d0f023465",
+    "react-native": "0.0.0-20220123-2009-48f6967ae",
     "react-native-codegen": "0.0.12",
     "react-native-gradle-plugin": "^0.0.4"
   },
