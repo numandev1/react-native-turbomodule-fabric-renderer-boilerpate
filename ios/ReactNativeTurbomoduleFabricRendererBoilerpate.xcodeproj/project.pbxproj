@@ -39,6 +39,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeTurbomoduleFabricRendererBoilerpate/main.m; sourceTree = "<group>"; };
 		1845B3A8279E952B00031234 /* MyApplicationLibrary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyApplicationLibrary.mm; sourceTree = "<group>"; };
 		1845B3A9279E952B00031234 /* MyApplicationLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplicationLibrary.h; sourceTree = "<group>"; };
+		1845B3AB279E985F00031234 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests/Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-ReactNativeTurbomoduleFabricRendererBoilerpate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTurbomoduleFabricRendererBoilerpate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests/Pods-ReactNativeTurbomoduleFabricRendererBoilerpate-ReactNativeTurbomoduleFabricRendererBoilerpateTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				1845B3AB279E985F00031234 /* Header.h */,
 				1845B3A9279E952B00031234 /* MyApplicationLibrary.h */,
 				1845B3A8279E952B00031234 /* MyApplicationLibrary.mm */,
 			);

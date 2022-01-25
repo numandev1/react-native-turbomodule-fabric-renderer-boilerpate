@@ -18,6 +18,8 @@ public class MyApplicationTurboModuleManagerDelegate extends ReactPackageTurboMo
 
     protected native HybridData initHybrid();
 
+    native boolean canCreateTurboModule(String moduleName);
+
     public static class Builder extends ReactPackageTurboModuleManagerDelegate.Builder {
         protected MyApplicationTurboModuleManagerDelegate build(
                 ReactApplicationContext context, List<ReactPackage> packages) {

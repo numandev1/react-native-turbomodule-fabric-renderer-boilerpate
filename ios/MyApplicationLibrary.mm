@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE()
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
-  return std::make_shared<MyApplicationLibrarySpecJSI>(params);
+  return std::make_shared<NativeMyApplicationLibrarySpecJSI>(params);
 }
 
 // Backward compatible invalidation
@@ -52,7 +52,7 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_SYNCHRONOUS_TYPED_METHOD(void, getString : (NSString *)arg resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
 {
-  resolve(@"ios test string");
+  resolve(@"ios test string from RCT_EXPORT_SYNCHRONOUS_TYPED_METHOD getString method");
 }
 
 

@@ -5544,7 +5544,7 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-codegen@*, react-native-codegen@0.0.12:
+react-native-codegen@*:
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.12.tgz#390712551e29f00cc9963e93fb4b6458b64dcf04"
   integrity sha512-o0zsGR2vjG2o4heEpr5JBl03I73PhT7jvzdNRewu43aXvc6M5kXICv+0ccJlP7dHjgcgkKqM/CuHqpV9gDc+Tw==
@@ -5553,7 +5553,7 @@ react-native-codegen@*, react-native-codegen@0.0.12:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-codegen@^0.0.13:
+react-native-codegen@0.0.13, react-native-codegen@^0.0.13:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.13.tgz#4cc94546fc75a5dbe9350d59c10108f2efe6bc17"
   integrity sha512-rCh1P+s0Q4N6vNgS97ckafbhJRztz22+0l0VZoyQC06F07J98kI5cUByH0ATypPRIdpkMbAZc59DoPdDFc01bg==
@@ -5570,10 +5570,10 @@ react-native-gradle-plugin@^0.0.4:
   dependencies:
     react-native-codegen "*"
 
-react-native@0.0.0-20220123-2009-48f6967ae:
-  version "0.0.0-20220123-2009-48f6967ae"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220123-2009-48f6967ae.tgz#b58475f7ca2fdd453d8cf910cef5fe66a0f54cbf"
-  integrity sha512-hjz3uVL9Fen/LW0TOFV2EjSSg4WykvQvpa6E25t8P02MfXnBSVMc3sWdHjL4H1Ahz5+UR+zI61rqnZPOS1ilnA==
+react-native@0.0.0-20220124-2008-c48e5acca:
+  version "0.0.0-20220124-2008-c48e5acca"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220124-2008-c48e5acca.tgz#08ed2db631841f5d03c53923dfef7e46928818aa"
+  integrity sha512-IJ3Mk7kxCVK8w9zYqIPl52l5QjU7S4IvEmoZ8edYUb9+MQaNNmlLM0xCvjhmifYPBcrRaQ86QCBcSunxi8NEcg==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^6.0.0"

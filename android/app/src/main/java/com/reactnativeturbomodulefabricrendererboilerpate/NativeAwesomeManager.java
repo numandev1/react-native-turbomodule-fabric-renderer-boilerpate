@@ -1,11 +1,11 @@
 package com.reactnativeturbomodulefabricrendererboilerpate;
 import androidx.annotation.NonNull;
 
-import com.example.samplelibrary.MyApplicationLibrarySpec;
+import com.example.samplelibrary.NativeMyApplicationLibrarySpec;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-public class NativeAwesomeManager extends MyApplicationLibrarySpec {
-    public static final String NAME = "NativeAwesomeManager";
+public class NativeAwesomeManager extends NativeMyApplicationLibrarySpec {
+    public static final String NAME = "MyApplicationLibrary";
 
     public NativeAwesomeManager(ReactApplicationContext reactContext) {
         super(reactContext);

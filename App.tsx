@@ -4,8 +4,8 @@ import {SafeAreaView, useColorScheme, StyleSheet, Alert} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Button from 'react-native/Libraries/Components/Button';
-import MyApplicationLibrary from './Libraries/MyApplicationLibrary';
-// import MyApplicationTurboCxxModule from './Libraries/MyApplicationTurboCxxModule'
+import MyApplicationLibrary from './Libraries/NativeMyApplicationLibrary';
+// import MyApplicationTurboCxxModule from './Libraries/NativeMyApplicationTurboCxxModule';
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -16,8 +16,8 @@ const App: () => Node = () => {
   const testHandler = async () => {
     const response = await MyApplicationLibrary.getString('hello world ');
     console.log(response);
-    // // const response2 = await MyApplicationTurboCxxModule.getConstants();
-    // // console.log(response)
+    // const response2 = await MyApplicationTurboCxxModule.getConstants();
+    // console.log(response2);
   };
 
   return (

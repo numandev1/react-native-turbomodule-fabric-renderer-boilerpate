@@ -1,7 +1,6 @@
 #include "MyApplicationTurboModuleManagerDelegate.h"
 
 #include "MyApplicationModuleProvider.h"
-#include "MyApplicationTurboCxxModule.h"
 
 namespace facebook {
 namespace react {
@@ -24,7 +23,7 @@ void MyApplicationTurboModuleManagerDelegate::registerNatives() {
 std::shared_ptr<TurboModule> MyApplicationTurboModuleManagerDelegate::getTurboModule(
     const std::string name,
     const std::shared_ptr<CallInvoker> jsInvoker) {
-  if (name == "MyApplicationTurboCxxModule") { return std::make_shared<MyApplicationTurboCxxModule>(jsInvoker); }
+  // Not implemented yet: provide pure-C++ NativeModules here.
   return nullptr;
 }
 
