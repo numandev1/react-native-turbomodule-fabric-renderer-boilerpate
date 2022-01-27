@@ -5526,10 +5526,10 @@ range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-react-devtools-core@4.22.1:
-  version "4.22.1"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.22.1.tgz#b276d42f860bedc373c9b3c0f5f96734318dd453"
-  integrity sha512-pvpNDHE7p0FtcCmIWGazoY8LLVfBI9sw0Kf10kdHhPI9Tzt3OG/qEt16GrAbE0keuna5WzX3r1qPKVjqOqsuUg==
+react-devtools-core@^4.23.0:
+  version "4.23.0"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.23.0.tgz#dff9d12202a472ef62632203d6de3877dc6e58be"
+  integrity sha512-KkzneT1LczFtebbTJlvRphIRvzuHLhI9ghfrseVv9ktBs+l2cXy8Svw5U16lzQnwU9okVEcURmGPgH79WWrlaw==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"
@@ -5570,10 +5570,10 @@ react-native-gradle-plugin@^0.0.4:
   dependencies:
     react-native-codegen "*"
 
-react-native@0.0.0-20220124-2008-c48e5acca:
-  version "0.0.0-20220124-2008-c48e5acca"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220124-2008-c48e5acca.tgz#08ed2db631841f5d03c53923dfef7e46928818aa"
-  integrity sha512-IJ3Mk7kxCVK8w9zYqIPl52l5QjU7S4IvEmoZ8edYUb9+MQaNNmlLM0xCvjhmifYPBcrRaQ86QCBcSunxi8NEcg==
+react-native@0.0.0-20220126-2009-86fa2a510:
+  version "0.0.0-20220126-2009-86fa2a510"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.0.0-20220126-2009-86fa2a510.tgz#2cb77c0f179a14207a1b06a59e71a2f2b5ae3fe9"
+  integrity sha512-eMW+MOcrlS8mk4NeKVqAjgH9V3ymdW5x5AJ+Gcgh7KSBCy6dB6Vv5325UDBlaXiApTvGXSgI/QK91k4AlzmSsA==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^6.0.0"
@@ -5596,7 +5596,7 @@ react-native@0.0.0-20220124-2008-c48e5acca:
     nullthrows "^1.1.1"
     pretty-format "^26.5.2"
     promise "^8.0.3"
-    react-devtools-core "4.22.1"
+    react-devtools-core "^4.23.0"
     react-native-codegen "^0.0.13"
     react-refresh "^0.4.0"
     react-shallow-renderer "16.14.1"
