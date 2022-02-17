@@ -492,7 +492,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 454A869839;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ReactNativeTurbomoduleFabricRendererBoilerpate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,8 +506,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onshobbak.lava;
 				PRODUCT_NAME = ReactNativeTurbomoduleFabricRendererBoilerpate;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.onshobbak.lava";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -519,7 +522,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 454A869839;
 				INFOPLIST_FILE = ReactNativeTurbomoduleFabricRendererBoilerpate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,8 +535,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onshobbak.lava;
 				PRODUCT_NAME = ReactNativeTurbomoduleFabricRendererBoilerpate;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.onshobbak.lava";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
